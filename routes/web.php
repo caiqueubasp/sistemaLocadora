@@ -33,4 +33,8 @@ Route::post('ator/editar/{id}',"atorController@editar");
 
 
 Route::get('filme',"FilmeController@todosFilmes");
+Route::get('filme/editar/{id}',"FilmeController@editar");
+Route::post('filme/editar/{id}',"FilmeController@editar");
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
