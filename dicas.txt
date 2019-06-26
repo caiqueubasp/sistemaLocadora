@@ -1,0 +1,32 @@
+------------------ LARAVEL -------------------------
+
+- Model -> Modelos -> (Banco de dados)
+- View -> (Front do sistema)
+Controller -> (Back do sistema)
+
+Routes -> Routes/Web.php
+	* URCs
+	* Direciona as solicitações
+
+APP/HTTP/Controller
+	* Tomadas de decisão do sistema
+
+MODEL /APP
+
+Resources/View
+	*Bcade
+	* Interfaces
+
+Recursos Adicionais
+
+* Migration:
+	* Cria um banco de dados
+	* Versões do seu banco
+
+
+---- Fazer CRUD PEDIDO
+
+
+*** deletar informações do banco de dados
+	inserir codigo abaixo "não é um comando utilizado "
+	SET GLOBAL FOREING_KEY_CHECKS=0;

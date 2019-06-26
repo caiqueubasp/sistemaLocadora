@@ -32,4 +32,9 @@ class FilmeController extends Controller
 
         return view("editarFilme",["resultado"=>$resultado, "filme"=>$filme]);
     }
+
+    public function deletarFilme($id){
+        $filme = Filme::find($id);
+        $filme->delete();
+    }
 }
