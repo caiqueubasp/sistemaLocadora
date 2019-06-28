@@ -24,7 +24,7 @@ Route::get('cadastro',function(){
 
 Route::get('compras',"comprasController@index");
 
-Route::get('ator',"atorController@index");
+Route::get('ator',"atorController@index")->middleware('checkadmin');
 
 Route::get('ator/cadastro', "atorController@create");
 Route::post('ator/cadastro', "atorController@create");
@@ -40,3 +40,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

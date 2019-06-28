@@ -15,9 +15,9 @@ class Produtos extends Migration
     {
         Schema::create('produtos', function(Blueprint $table){
             $table->bigincrements('id');
-            $table->string('produtos')
-    };
-
+            $table->string('produtos');
+    });
+    }
     /**
      * Reverse the migrations.
      *
